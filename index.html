@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Early Access</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up for Early Access</h1>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="referee">Referee (Optional):</label>
+      <input type="text" id="referee" name="referee">
+      
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="referralCodePopup" class="popup">
+      <p>Your referral code: <span id="referralCode"></span></p>
+      <button onclick="copyReferralCode()">Copy Code</button>
+      <button onclick="closePopup()">Close</button>
+    </div>
+
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard">
+      <!-- Leaderboard entries will be populated here -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
